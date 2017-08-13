@@ -1,0 +1,17 @@
+# Plot data from Arduino
+
+Simple, prototye project, just to prove a point.
+
+Reads /dev/ttyACM0, runs a small server and sends data to localhost:40080,
+where you can find a plot of the values.
+
+./avr folder has a small example that sends a random value via UART every 500ms.
+./src holds the desktop part
+
+# Dependencies
+
+[crow](https://github.com/ipkn/crow) - added via git submodule
+boost algorithm - needed by crow
+[peity](https://github.com/benpickles/peity) - jquery plugin for plotting, copy-pasted in html
+
+Kudos to all developers!
